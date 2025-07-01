@@ -28,3 +28,20 @@ If you have updateCheck set to 'yes' in the config file, which is the default se
 ### Docker Setup
 
 For instructions on running this project with Docker, check out [DOCKER.md](DOCKER.md).
+
+#### GitHub Container Registry
+
+This project includes GitHub Actions that automatically build and publish Docker images to GitHub Container Registry. For quick deployment using pre-built images, see [GITHUB_CONTAINER.md](GITHUB_CONTAINER.md).
+
+**Available Images:**
+- `ghcr.io/[your-username]/librekb:latest` - Latest build from main branch
+- `ghcr.io/[your-username]/librekb:v*` - Tagged releases
+
+**Quick Start with Pre-built Image:**
+```bash
+# Pull the latest image
+docker pull ghcr.io/[your-username]/librekb:latest
+
+# Use with docker-compose (see GITHUB_CONTAINER.md for full setup)
+docker-compose up -d
+```

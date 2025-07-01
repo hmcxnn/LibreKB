@@ -1,5 +1,13 @@
 # LibreKB Docker Deployment
 
+## 部署选项
+
+### 选项 1: 使用 GitHub Container Registry（推荐）
+使用预构建的镜像快速部署，请参考 [GITHUB_CONTAINER.md](GITHUB_CONTAINER.md)
+
+### 选项 2: 本地构建部署
+从源码本地构建和部署
+
 ## Prerequisites
 Ensure you have the following installed on your system:
 - Docker
